@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mukesh | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- == Google-Font == -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- == AOS Scroll Animation Library == -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- == CDN Icons == -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+</head>
+<body>
+
+
+<header class="navbar">
+  <div class="nav-logo">Mukesh Portfolio</div>
+  <nav class="nav-links">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <button onclick="downloadResume()" class="resume-btn" data-aos="zoom-in"><i class="fas fa-file-download"></i>Resume</button>
+  </nav>
+</header>
+
+  <!-- ========== Hero Section ========== -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Mukesh Udaya Kumar</span></h1>
+      <p class="typing-text">Frontend Developer | JavaScript Enthusiast | Real-Time App Builder</p>
+    </div>
+    <div class="hero-image">
+      <img src="assets/images/mukesh.jpg" alt="Mukesh Udaya Kumar">
+    </div>
+  </div>
+</section>
+
+
+  <!-- ========== About Section ========== -->
+<section class="about" id="about" data-aos="fade-up">
+  <h2> <i class="fas fa-user"></i>  About Me</h2>
+  <p>
+    I’m a passionate Frontend Developer with a strong foundation in HTML, CSS, and JavaScript. Currently working on 8 web development projects as part of the RISE Internship by Tamizhan Skills.
+  </p>
+  <p>
+    I’ve completed training with TAP Academy where I became proficient in Java and data structures. I love learning new technologies and creating applications that make an impact.
+  </p>
+</section>
+
+  <!-- ========== Projects Section ========== -->
+  <section class="projects" id="projects" data-aos="fade-right">
+    <h2><i class="fas fa-code"></i>Projects</h2>
+<div class="projects-container">
+  <div class="project-card">
+    <h3>Cardiovascular Disease Prediction Using Retinal Images</h3>
+    <p>
+      Built a deep learning model to detect early signs of cardiovascular diseases using retinal images.
+      Utilized CNNs, advanced feature extraction, and data augmentation to improve accuracy and reduce overfitting.
+      The system enables timely diagnosis and improves patient outcomes through efficient predictive analysis.
+    </p>
+  </div>
+  <div class="project-card">
+    <h3>Image-to-Text-to-Image using Machine Learning</h3>
+    <p>
+      Developed a system that transforms images into text and regenerates images from text using ML and NLP.
+      Employed computer vision techniques and transfer learning to optimize image synthesis and caption generation accuracy.
+    </p>
+  </div>
+    <div class="project-card">
+        <h3>YouTube Clone</h3>
+        <p>Built using HTML and CSS with Flexbox for layout. Fully responsive and visually matched to YouTube's design.</p>
+    </div>
+    <div class="project-card">
+        <h3>Form Validation App</h3>
+        <p>Created a real-time form validator using JavaScript DOM methods and regex.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>This interactive and animated personal portfolio built with HTML, CSS, and JavaScript DOM manipulation to showcase skills and projects.</p>
+    </div>
+</div>
+  </section>
+
+  <!-- ========== Skills Section ========== -->
+  <section class="skills" id="skills" data-aos="zoom-in">
+    <h2><i class="fas fa-tools"></i>Skills</h2>
+    <div class="skills-bars">
+      <div class="skill-bar"><span style="width: 95%">HTML</span></div>
+      <div class="skill-bar"><span style="width: 95%">CSS / Flexbox</span></div>
+      <div class="skill-bar"><span style="width: 85%">JavaScript (DOM)</span></div>
+      <div class="skill-bar"><span style="width: 95%">Java / OOP</span></div>
+      <div class="skill-bar"><span style="width: 75%">Data Structures</span></div>
+      <div class="skill-bar"><span style="width: 70%">React.js + Redux</span></div>
+      <div class="skill-bar"><span style="width: 65%">Spring Boot</span></div>
+      <div class="skill-bar"><span style="width: 60%">PostgreSQL</span></div>
+    </div>  
+</section>
+
+<!-- ========= Contact ========= -->
+
+<section class="contact" id="contact" data-aos="fade-in">
+  <h2><i class="fas fa-envelope"></i>Contact Me</h2>
+  <form id="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<div id="success-banner" class="success-banner">
+  <p>✅ Thank you, Mukesh! Your message has been received.</p>
+</div>
+  <!-- ========== Footer ========== -->
+<footer>
+  <p><i class="fas fa-terminal"></i>&copy; <span id="year"></span> Mukesh Udaya Kumar | Built with ❤ and JavaScript</p>
+</footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 1000,
+        once: true,
+        easing: 'ease-in-out',
+        });
+    </script>
+  <script src="/portfolio/script.js"></script>
+</body>
+</html>

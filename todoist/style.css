@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background: url(/todoist/images/flat-lay-working-plate-with-cup-tea.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.heading{
+    border: 8px solid rgba(99, 74, 64, 0.853);
+    color: rgba(99, 74, 64, 0.853);
+    border-radius: 10px;
+    padding: 5px 5px;
+    display: flex ;
+    justify-content: center;
+    width: 360px;
+    background-color: white;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+#add-task-container{
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color:rgba(99, 74, 64, 0.853);
+    width: 350px;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#add-task-container input{
+    width: 280px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+#add-task-container input::placeholder{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 5px;
+    font-weight: 600;
+}
+
+
+#add-task-container button{
+    background: transparent;
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+}
+
+#plus-btn:hover{
+    transition: .3s;
+    color:rgba(99, 74, 64, 0.853);
+    background-color:white;
+}
+
+
+
+#plus-btn {
+    font-size: 30px;
+    color:white;
+    cursor: pointer;
+}
+
+/* javascript styling */
+
+.task-list{
+    background-color:rgba(99, 74, 64, 0.853);
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:first baseline;
+    width: 84%;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+
+li{
+    text-transform:capitalize;
+    list-style: none;
+    padding: 5px 5px;
+    width: 285px;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: 500;
+    color:rgba(99, 74, 64, 0.853);
+}
+
+
+
+.check-btn,.delete-btn{
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    color:rgba(99, 74, 64, 0.853);
+}
+
+
+.check-btn:hover{
+    color:rgb(13, 37, 13);
+    background-color:rgb(89, 218, 89) ;
+}
+
+.delete-btn:hover{
+    color: rgb(13, 37, 13);
+    background-color: red;
+}
