@@ -1,16 +1,14 @@
-// ✅ Resume Download Function
 function downloadResume() {
     const link = document.createElement('a');
-    link.href = './assets/Mukeshresume main.pdf'; // ✅ relative path from index.html
+    link.href = './assets/Mukeshresume main.pdf'; 
     link.download = 'Mukesh_Udaya_Kumar_Resume.pdf';
-    document.body.appendChild(link); // append to DOM (optional but safe)
-    link.click(); // trigger the download
-    document.body.removeChild(link); // cleanup
+    document.body.appendChild(link); 
+    link.click(); 
+    document.body.removeChild(link); 
 }
 
-// ✅ Contact Form Submission Handler
 document.getElementById('contact-form').addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevent page refresh
+    e.preventDefault(); 
 
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
