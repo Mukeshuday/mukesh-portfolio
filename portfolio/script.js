@@ -1,3 +1,8 @@
+
+document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
+
 function downloadResume() {
     const link = document.createElement('a');
     link.href = './assets/Mukeshresume main.pdf'; 
