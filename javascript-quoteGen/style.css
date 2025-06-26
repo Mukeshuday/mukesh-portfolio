@@ -11,7 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url(/javascript-quoteGen/images/horror-scene-with-eerie-library.jpg) no-repeat center center ;
+    background: url(images/horror-scene-with-eerie-library.jpg) no-repeat center center ;
     background-size: cover;
 }
 
