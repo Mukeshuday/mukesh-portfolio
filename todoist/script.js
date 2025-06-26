@@ -43,10 +43,11 @@ addTaskBtn.addEventListener('click',function(){
     })
 
 
-    deleteBtn.addEventListener('click',function(e){
-        let target = e.target;
-
-        target.parentElement.remove();
-    })
+    deleteBtn.addEventListener('click', function(e) {
+        const taskItem = e.target.closest('.task-list');
+        if (taskItem) {
+            taskItem.remove();
+        }
+    });
 
 })
