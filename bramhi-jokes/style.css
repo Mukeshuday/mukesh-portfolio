@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+#main-header{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 800;
+    padding: 5px 0;
+    border-bottom: 2px solid yellow;
+    box-shadow: 0 5px 10px rgba(255,255,0,0.1);
+}
+
+
+
+h1 {
+    font-size: 3rem;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #333;
+    animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+    text-shadow: 0 0 2px #fff, 0 0 5px #dbff3c;
+    margin-bottom: 10px;
+}
+
+span {
+    color: yellow;
+}
+
+/* Subtitle below heading */
+.fade-in {
+    text-shadow: 0 0 5px #fff, 0 0 5px #ff3c3c;
+    animation: pulseGlow 2s infinite;
+    font-weight: bold;
+}
+
+/* Layout for dialog box: jokes + image side by side */
+.dialog-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+/* Left (joke) box */
+#joke-container {
+    flex: 1 1 55%;
+    text-align: center;
+}
+
+/* Right (image) box */
+.image-box {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Joke Text */
+#joke-box {
+    padding: 60px 0;
+    width: 100%;
+}
+
+.punch-line,.setup {
+  position: relative;
+  padding: 20px;
+  font-size: 1.4rem;
+  border: 2px solid white;
+  overflow: hidden;
+  color: yellow;
+}
+
+/* Underline effect */
+.punch-line::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, yellow, white);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: underlineGrow 0.6s ease-out forwards;
+}
+
+.setup::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, white, yellow);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: underlineGrow 0.6s ease-out forwards;
+}
+
+/* Keyframes for animated underline */
+@keyframes underlineGrow {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Joke Button */
+#joke-button {
+    font-size: 1.5rem;
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #000000, #eeff00);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 5px white;
+    margin-top: 10px;
+}
+
+#joke-button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    text-decoration: underline;
+}
+
+/* Image Styling */
+#template {
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 255, 0, 0.4);
+    animation: pop-in 0.4s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (hover: hover) {
+    #template:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 35px rgba(255, 255, 0, 0.7);
+    }
+}
+
+/* Typing Animation */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Blink animation */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Text Pulse */
+@keyframes pulseGlow {
+  0%, 100% {
+    color: white;
+    text-shadow: 0 0 5px #fff, 0 0 10px #ff3c3c;
+  }
+  50% {
+    color: yellow;
+    text-shadow: 0 0 5px yellow, 0 0 10px #fff;
+  }
+}
+
+/* Image Appear */
+@keyframes pop-in {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@media screen and (max-width: 768px) {
+    .dialog-box {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #joke-container,
+    .image-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    #template {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .setup,
+    .punch-line {
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+
+    #joke-button {
+        font-size: 1.2rem;
+        padding: 10px 18px;
+    }
+}

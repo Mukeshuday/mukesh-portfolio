@@ -1,0 +1,29 @@
+{
+  "jokes": [
+    { "id": 1, "setup": "బ్రహ్మానందం అంటాడు:", "punchline": "Adbhutam Fantastic!", "imageUrl":"/bramhi-jokes/img01.jpg" },
+    { "id": 2, "setup": "ఇందులో నువ్వు:", "punchline": "Present ga unnava?", "imageUrl": "/bramhi-jokes/img02.jpg" },
+    { "id": 3, "setup": "వాట్స్‌ ఆప్ గ్రూప్ లో:", "punchline": "Is this fish market?", "imageUrl": "/bramhi-jokes/img03.jpg" },
+    { "id": 4, "setup": "బ్రహ్మి ఫణులో:", "punchline": "I want respect!", "imageUrl": "/bramhi-jokes/img04.jpg" },
+    { "id": 5, "setup": "నవ్వడం ప్రారంభిస్తే:", "punchline": "Simply you are great!", "imageUrl": "/bramhi-jokes/img05.jpg" },
+    { "id": 6, "setup": "సంగీతంలో:", "punchline": "Nee yankamma!", "imageUrl": "/bramhi-jokes/img06.jpg" },
+    { "id": 7, "setup": "కామెడీ క్లాసిక్:", "punchline": "Break ichedam!", "imageUrl": "/bramhi-jokes/img07.jpg" },
+    { "id": 8, "setup": "పబ్లిక్ వైబ్లో:", "punchline": "600 nimishalu aipoyayi sir!", "imageUrl": "/bramhi-jokes/img08.jpg" },
+    { "id": 9, "setup": "చిరంజీవి సినిమాలో:", "punchline": "Bullet Babu.", "imageUrl": "/bramhi-jokes/img09.jpg" },
+    { "id": 10, "setup": "మంచి స్టైల్లో:", "punchline": "Padmashri!", "imageUrl": "/bramhi-jokes/img11.jpg" },
+    { "id": 11, "setup": "సీరియస్ టైం:", "punchline": "They paid no!", "imageUrl": "/bramhi-jokes/img10.jpg" },
+    { "id": 12, "setup": "పిల్లల కోసం:", "punchline": "Dabba paala.", "imageUrl": "/bramhi-jokes/img12.jpg" },
+    { "id": 13, "setup": "ఫ్యామిలీ మీటింగ్:", "punchline": "Overaction chestav entra overaction!", "imageUrl": "/bramhi-jokes/immg13.jpg" },
+    { "id": 14, "setup": "హీరో అడిగాడు:", "punchline": "I want my 600 seconds back!", "imageUrl": "/bramhi-jokes/img14.jpg" },
+    { "id": 15, "setup": "ఫుడ్ ప్రియుడు:", "punchline": "Coffee kaadhu, comedy!", "imageUrl": "/bramhi-jokes/img15.jpg" },
+    { "id": 16, "setup": "కలర్ ఫుల్ మూడ్:", "punchline": "McDonald Murthy!", "imageUrl": "/bramhi-jokes/img16.jpg" },
+    { "id": 17, "setup": "ఫేస్ లో:", "punchline": "Nee overaction antha badhulu.", "imageUrl": "/bramhi-jokes/img17.jpg" },
+    { "id": 18, "setup": "సీరియస్ మాట్లాడితే:", "punchline": "Do you hear me?", "imageUrl": "/bramhi-jokes/img18.jpg" },
+    { "id": 19, "setup": "జోక్ ఇచ్చాక:", "punchline": "Vinodam lo donga!", "imageUrl": "/bramhi-jokes/img19.jpg" },
+    { "id": 20, "setup": "స్టేజ్ ప్రొఫెషనల్:", "punchline": "Maaku comedy cheyyadam ochindhi!", "imageUrl": "/bramhi-jokes/img20.jpg" },
+    { "id": 21, "setup": "టీవీ గల్:", "punchline": "Blessings kaadu sir!", "imageUrl": "/bramhi-jokes/img01.jpg" },
+    { "id": 22, "setup": "శాబాష్ బ్రహ్మి:", "punchline": "I want respect!", "imageUrl": "/bramhi-jokes/img02.jpg" },
+    { "id": 23, "setup": "వార్షిక వేడుకలో:", "punchline": "Nee yankamma!", "imageUrl": "/bramhi-jokes/img03.jpg" },
+    { "id": 24, "setup": "వైరల్ వీడియో స్టైల్:", "punchline": "Bullet Babu reporting!", "imageUrl": "/bramhi-jokes/img04.jpg" },
+    { "id": 25, "setup": "క్లైమాక్స్ దశలో:", "punchline": "Sippy style!", "imageUrl": "/bramhi-jokes/img05.jpg" }
+  ]
+}
