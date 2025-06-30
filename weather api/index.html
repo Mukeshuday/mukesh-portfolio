@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Theme Toggle -->
+  <button id="theme-toggle">Toggle Theme</button>
+
+  <!-- Weather App Container -->
+  <div id="app">
+    <div id="search-bar" class="card-box">
+      <input type="text" id="searchbox" placeholder="Search by city name" />
+      <button id="searchbtn"><i class="fa fa-search"></i></button>
+    </div>
+
+    <div id="info" class="card-box">
+      <p id="date">29 June 2025</p>
+      <h3 id="city">Chittoor</h3>
+    </div>
+
+    <div class="description card-box"></div>
+    <div id="temp" class="card-box"></div>
+
+    <div id="extraInfo">
+      <div class="col">
+        <div class="info">
+          <h5>Highs</h5>
+          <p id="tempMax">--</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="info">
+          <h5>Lows</h5>
+          <p id="tempMin">--</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="info">
+          <h5>Wind</h5>
+          <p id="wind">--</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="info">
+          <h5>Humidity</h5>
+          <p id="humidity">--</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="info">
+          <h5>Feels Like</h5>
+          <p id="feelslike">--</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Particles.js Script -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 50 },
+        color: { value: '#ffffff' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.3 },
+        size: { value: 3 },
+        line_linked: { enable: false },
+        move: { enable: true, speed: 0.6 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: 'repulse' }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+
+  <!-- Weather Script -->
+  <script src="./script.js"></script>
+</body>
+</html>
