@@ -1,0 +1,128 @@
+.box-2 {
+  background-color: #ff595e;
+  border-radius: 16px;
+  padding: 20px;
+  width: 360px;
+  margin-left: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Search Bar */
+.search-header {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 0.8rem;
+  width: 180px;
+  outline: none;
+}
+
+#search-btn {
+  padding: 10px 20px;
+  background-color: #d9ed92;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#search-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Description Box */
+.description-box {
+  background-color: #fefae0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Footer Controls */
+.control-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ctrl-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #d62828;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.ctrl-btn:hover {
+  transform: scale(1.1);
+  background-color: #b71c1c;
+}
+
+
+
+/* Add after description-box CSS */
+.stats-box{
+  background-color: #fefae0;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+  font-size: 0.85rem;
+}
+
+.stats-box ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.stats-box li {
+  flex: 1 1 45%;
+}
+
+
+.evolution-box {
+  background-color: #fefae0;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+  font-size: 0.85rem;
+  max-height: 100px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.evolution-box #evolutions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-height: 50px;
+}
+
+.evolution-box img {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  object-fit: contain;
+}

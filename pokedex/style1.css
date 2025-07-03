@@ -1,0 +1,226 @@
+/* Reset & Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f94144;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Press Start 2P', monospace;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.box-1 {
+  background-color: #ff595e;
+  border-radius: 16px;
+  padding: 20px;
+  width: 360px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Header Styling */
+.main-header {
+  background-color: #d62828;
+  border-radius: 12px 12px 0 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.big-btn button {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
+.small-btns {
+  display: flex;
+  gap: 6px;
+}
+
+.small-btns button,
+#red-smc {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+}
+
+#red-sm,
+#red-smc {
+  background-color: red;
+}
+
+#green-sm {
+  background-color: green;
+}
+
+#yellow-sm {
+  background-color: yellow;
+}
+
+/* Console Body */
+.box1-child {
+  background-color: #ffb703;
+  border-radius: 0 0 12px 12px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.pokemon-title {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  background: #d62828;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.screen {
+  background-color: #fefae0;
+  border-radius: 10px;
+  padding: 10px;
+  width: 280px;
+  height: 160px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: flicker 1.5s infinite ease-in-out;
+}
+
+.img-window {
+  background: white;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.img-window img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.screen-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.screen-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#grey-1,
+#grey-2 {
+  background: gray;
+  height: 4px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.play-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.linear-btn1,
+.linear-btn2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#Blue-circle-2 {
+  width: 40px;
+  height: 40px;
+  background-color: aqua;
+  border: none;
+  border-radius: 50%;
+}
+
+#capsules-1,
+#capsules-2 {
+  width: 60px;
+  height: 20px;
+  border-radius: 12px;
+  border: none;
+}
+
+#capsules-1 {
+  background: green;
+}
+
+#capsules-2 {
+  background: orangered;
+}
+
+#plus {
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  border: none;
+  background: #ffffff;
+  color: #000;
+  border-radius: 12px;
+  box-shadow: 0 4px #999;
+  transition: all 0.2s ease;
+}
+
+#plus:active {
+  box-shadow: 0 2px #999;
+  transform: translateY(4px);
+}
+
+#rectangle {
+  width: 150px;
+  height: 50px;
+  background-color: #d9ed92;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+/* Animations */
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.96;
+  }
+}
