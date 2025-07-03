@@ -6,21 +6,35 @@
 }
 
 body {
-  background-color: #f94144;
+  background: radial-gradient(circle at top left, #2d2f46, #1c1d29, #111);
+  font-family: 'Press Start 2P', monospace;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Press Start 2P', monospace;
-  height: 100vh;
-  overflow: hidden;
+  flex-direction: column;
+  padding: 40px 10px;
+  gap: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: background 0.5s ease;
+  min-height: 100vh;
 }
 
+.pokedex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+
 .box-1 {
-  background-color: #ff595e;
+  background: linear-gradient(to bottom right, #ff595e, #d62828);
   border-radius: 16px;
   padding: 20px;
   width: 360px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* Header Styling */
@@ -222,5 +236,52 @@ button:hover {
   }
   50% {
     opacity: 0.96;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .pokedex-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-1 {
+    width: 90%;
+  }
+
+  .screen {
+    width: 100%;
+    height: auto;
+  }
+
+  .pokemon-title {
+    font-size: 1rem;
+    padding: 6px;
+  }
+
+  #rectangle {
+    width: 100%;
+  }
+
+  #plus {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  #Blue-circle-2 {
+    width: 30px;
+    height: 30px;
+  }
+
+  #capsules-1, #capsules-2 {
+    width: 50px;
+    height: 16px;
   }
 }

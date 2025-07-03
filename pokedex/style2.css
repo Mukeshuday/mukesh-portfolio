@@ -1,10 +1,11 @@
+
 .box-2 {
-  background-color: #ff595e;
+  background: linear-gradient(to bottom right, #ff595e, #d62828);
   border-radius: 16px;
   padding: 20px;
   width: 360px;
   margin-left: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -125,4 +126,41 @@
   flex-shrink: 0;
   border-radius: 5px;
   object-fit: contain;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .box-2 {
+    width: 90%;
+  }
+
+  .search-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #search-input {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  #search-btn {
+    width: 100%;
+  }
+
+  .stats-box ul {
+    flex-direction: column;
+  }
+
+  .ctrl-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .control-footer {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }

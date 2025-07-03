@@ -1,181 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon  API</title>
-    <!-- Style-sheets -->
-    <link rel="stylesheet" href="./style1.css">
-    <link rel="stylesheet" href="./style2.css">
-    <!-- FontAwesome -->
-     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pokédex UI</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./style1.css" />
+  <link rel="stylesheet" href="./style2.css" />
 </head>
 <body>
-  
 
-<div class="box-1">
-    <!-- Header Section -->
-    <div class="main-header">
-      <div class="header">
-        <div class="big-btn">
-          <button id="Blue-circle-1"></button>
+  <!-- Pokédex UI -->
+  <div class="pokedex-wrapper">
+
+    <div class="box-1">
+      <div class="main-header">
+        <div class="header">
+          <div class="big-btn"><button id="Blue-circle-1"></button></div>
+          <div class="small-btns">
+            <button id="red-sm"></button>
+            <button id="green-sm"></button>
+            <button id="yellow-sm"></button>
+          </div>
         </div>
-        <div class="small-btns">
-          <button id="red-sm"></button>
-          <button id="green-sm"></button>
-          <button id="yellow-sm"></button>
+      </div>
+
+      <div class="box1-child">
+        <h2 id="pokemon-title" class="pokemon-title">POKÉMON</h2>
+
+        <div class="screen">
+          <div class="img-window">
+            <img id="pokemon-image" src="" alt="Pokémon" />
+          </div>
+          <div class="screen-bottom">
+            <div class="screen-btn">
+              <button id="red-smc"></button>
+            </div>
+            <div class="screen-lines">
+              <p id="grey-1"></p>
+              <p id="grey-2"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="play-btns">
+          <div class="linear-btn1">
+            <button id="Blue-circle-2"></button>
+            <button id="capsules-1"></button>
+            <button id="capsules-2"></button>
+            <button id="plus">+</button>
+          </div>
+          <div class="linear-btn2">
+            <button id="rectangle"></button>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Console Body -->
-    <div class="box1-child">
-    <h2 id="pokemon-title" class="pokemon-title">POKÉMON</h2>
-      <!-- Screen Area -->
-      <div class="screen">
-        <div class="img-window">
-          <img id="pokemon-image" src="" alt="Pokémon" />
-        </div>
-        <div class="screen-bottom">
-          <div class="screen-btn">
-            <button id="red-smc"></button>
-          </div>
-          <div class="screen-lines">
-            <p id="grey-1"></p>
-            <p id="grey-2"></p>
-          </div>
-        </div>
+  
+    <div class="box-2">
+      <div class="search-header">
+        <input type="text" id="search-input" placeholder="Search Pokémon..." />
+        <button id="search-btn">Go</button>
       </div>
 
-      <!-- Control Buttons -->
-      <div class="play-btns">
-        <div class="linear-btn1">
-          <button id="Blue-circle-2"></button>
-          <button id="capsules-1"></button>
-          <button id="capsules-2"></button>
-          <button id="plus">+</button>
-        </div>
-        <div class="linear-btn2">
-          <button id="rectangle"></button>
-        </div>
+      <div class="description-box">
+        <h3 id="poke-name">Name: Pikachu</h3>
+        <p id="poke-type">Type: Electric</p>
+        <p id="poke-ability">Ability: Static</p>
+        <p id="poke-weight">Weight: 6kg</p>
+      </div>
+
+      <div class="stats-box">
+        <h4>Stats</h4>
+        <ul>
+          <li id="stat-hp"></li>
+          <li id="stat-attack"></li>
+          <li id="stat-defense"></li>
+          <li id="stat-speed"></li>
+        </ul>
+      </div>
+
+      <div class="evolution-box">
+        <h4>Evolution Chain</h4>
+        <div id="evolutions"></div>
+      </div>
+
+      <div class="control-footer">
+        <button class="ctrl-btn">A</button>
+        <button class="ctrl-btn">B</button>
+        <button class="ctrl-btn">↑</button>
+        <button class="ctrl-btn">↓</button>
       </div>
     </div>
   </div>
 
-  <div class="box-2">
-    <!-- Search Header -->
-    <div class="search-header">
-      <input type="text" id="search-input" placeholder="Search Pokémon..." />
-      <button id="search-btn">Go</button>
-    </div>
-
-    <!-- Pokémon Description -->
-    <div class="description-box">
-      <h3 id="poke-name">Name: Pikachu</h3>
-      <p id="poke-type">Type: Electric</p>
-      <p id="poke-ability">Ability: Static</p>
-      <p id="poke-weight">Weight: 6kg</p>
-    </div>
-
-    <!-- Extra Buttons (like control pad) -->
-    <div class="control-footer">
-      <button class="ctrl-btn">A</button>
-      <button class="ctrl-btn">B</button>
-      <button class="ctrl-btn">↑</button>
-      <button class="ctrl-btn">↓</button>
-    </div>
-
-    <!-- description-box -->
-    <div class="stats-box">
-      <h4>Stats</h4>
-      <ul>
-        <li id="stat-hp"></li>
-        <li id="stat-attack"></li>
-        <li id="stat-defense"></li>
-        <li id="stat-speed"></li>
-      </ul>
-    </div>
-
-    <div class="evolution-box">
-      <h4>Evolution Chain</h4>
-      <div id="evolutions"></div>
-    </div>
-</div>
-
-    <script src="./script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
